@@ -4,6 +4,7 @@ export class AnimalFarm {
     this.foodLevel = 10;
     this.age = 1;
     this.pottyLevel = 20;
+    this.medicine = 1;
 
   }
   setHunger() {
@@ -29,9 +30,26 @@ export class AnimalFarm {
 
 didYouPotty(pottyLevel) {
   if (this.pottyLevel < 80000) {
-    return true
+    return this.age = 0;
   } else {
     return false
   }
 }
+
+didYouPottyagain() {
+  if (this.pottyLevel < 80000 && this.medicine > 1) {
+    return this.age = 0;
+  } else {
+    return false;
+  }
+
+}
+
+ conditionToStay() {
+   if (this.foodLevel > 10 && this.medicine > 1) {
+     return this.age > 1;
+   } else {
+     return false;
+   }
+ }
 }
